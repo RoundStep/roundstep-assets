@@ -1,0 +1,29 @@
+    [ ELEMENTS ]
+---------------------------------
+    MAIN ELEMENTS
+> topbar-o -> top navigation
+> sidebar-o -> side navigation
+> block-o -> main collector
+> bottom-bar-o -> bottom navigation
+> block-l -> solo block
+> block-la -> double block
+> block-lb -> triple block
+> block-lc -> floaty block
+---------------------------------
+    CONTENT ELEMENTS
+> text-l -> title
+> text-la -> subtitle
+> text-lb -> main text
+---------------------------------
+    [ STYLISHING ] -> class-atribute
+5 unique colors:
+-> mudimy
+-> craily
+-> rosely
+-> oxely
+-> finy
+---------------------------------
+    [ ADDITIONAL ]
+---------------------------------
+> center -> for float=center
+---------------------------------
