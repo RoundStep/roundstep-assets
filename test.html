@@ -7,13 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="fonts/SFCompactRounded-Regular.otf" rel="stylesheet">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <style>
+        block-side {
+            background: gray;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
-<body>
-    <sidebar-o>
-        <img src="test.png">
+<body class="text-blocker">
+    <topbar-o>
+        <block-menu class="block-menu">
+
+            <ul class="menu__box">
+              <li><a class="menu__item" href="#">Главная</a></li>
+                    <li><a class="menu__item" href="#">Проекты</a></li>
+                    <li><a class="menu__item" href="#">Команда</a></li>
+                    <li><a class="menu__item" href="#">Блог</a></li>
+                    <li><a class="menu__item" href="#">Контакты</a></li>
+            </ul>
+          </block-menu>
+        <text-la class="logo">RoundStep</text-la>
+
+        <text-la class="tabs" onclick="ThemeSwitch()">🌓</text-la>
+        <text-la class="tabs" onclick="OpenLink('test.html')">Home</text-la>
+        <text-la class="tabs">About</text-la>
+    </topbar-o>
+
+    <sidebar-o class="usiuse">
+        <block-side>
+            <text-l>helllo my friend</text-l>
+            <img src="test.png">
+        </block-side>
+        
+        <block-side>
+            <text-l>helllo my friend</text-l>
+            <img src="test.png">
+        </block-side>
     </sidebar-o>
     <!--<center>-->
         <block-o class="uside">
@@ -25,10 +58,10 @@
             <block-la>
                 <text-lb>Why RoundStep? bla rege fw ff wff ffwfefw</text-lb>
                 <text-lc>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum pariatur dolores quas illo
-                    vitae! Nemo unde sit quibusdam magnam harum recusandae quis perferendis minus</text-lc>
+                    vitae! Nemo unde sit quibusdam magnam harum recusandae quis perferendis minus recusandae</text-lc>
             </block-la>
             <block-la>
-                <text-lb>What about pfkepkgee ee e efe pricing?</text-lb>
+                <text-lb>What about pfkepkgee ee e efe?</text-lb>
                 <text-lc>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe provident blanditiis inventore
                     quidem dolor? Nisi esse aspernatur perspiciatis laborum temporibus adipisci</text-lc>
             </block-la>
@@ -36,7 +69,7 @@
             <block-lb>
                 <text-lb>Why RoundStep?</text-lb>
                 <text-lc>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nulla eius dolor tenetur nam, saepe
-                    dolorem ad earum. Quisquam quod quos nostrum quasi eaque quibusdam</text-lc>
+                    dolorem ad earum. Quisquam quod quos nostrum quasi eaque quibusdam quibusdam</text-lc>
             </block-lb>
             <block-lb>
                 <text-lb>Why RoundStep?</text-lb>
@@ -51,6 +84,7 @@
             </block-lb>
         </block-o>
     <!--</center>-->
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>

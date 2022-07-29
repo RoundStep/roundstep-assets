@@ -9,6 +9,7 @@
 > block-la -> double block
 > block-lb -> triple block
 > block-lc -> floaty block
+> block-side -> side bar blocks
 ---------------------------------
     CONTENT ELEMENTS
 > text-l -> title
@@ -16,14 +17,23 @@
 > text-lb -> main text
 ---------------------------------
     [ STYLISHING ] -> class-atribute
-5 unique colors:
+---------------------------------
+5 UNIQUE COLORS:
 -> mudimy
 -> craily
 -> rosely
 -> oxely
 -> finy
 ---------------------------------
+> logo -> for text-la -> logo text
+> tabs -> for text-la -> only tab url
+> text-blocker -> for no highiting text
+---------------------------------
     [ ADDITIONAL ]
 ---------------------------------
 > center -> for float=center
+---------------------------------
+    [ SCRIPTING ]
+---------------------------------
+> clickable link on text block -> onclick="OpenLink('your-url.com')"
 ---------------------------------

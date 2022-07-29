@@ -1,0 +1,290 @@
+/* MAIN BLOCKS */
+img {
+    border-radius: 8px;
+    width: 40%;
+}
+
+.text-blocker {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+block-o,
+top-bar-o,
+sidebar-o,
+bottom-bar-o,
+block-l,
+block-la,
+block-lb,
+block-lc {
+    display: inline-block;
+    height: auto;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 2%;
+    background: whitesmoke;
+    margin-bottom: 2%;
+}
+
+topbar-o {
+    display: inline-block;
+    height: 5%;
+    width: 100%;
+    background: red;
+    padding: 1%;
+}
+
+.tabs {
+    list-style: none;
+    float: right;
+    margin-right: 2%;
+    margin-top: -4%;
+}
+
+block-o {
+    background: none;
+}
+
+sidebar-o {
+    width: 22%;
+    height: auto;
+    float: right;
+    margin-top: 2%;
+    background: none;
+}
+
+.uside {
+    width: 70%;
+    float: left;
+}
+
+block-side {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+    border-radius: 6px;
+}
+
+block-side:last-child {
+    margin-bottom: 0%;
+}
+
+text-l,
+text-la,
+text-lb,
+text-lc {
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: auto;
+    float: center;
+    font-size: 1em;
+    height: auto;
+    font-family: SFCompactRounded-Regular;
+}
+
+text-lb {
+    font-size: 1.5em;
+}
+
+text-la {
+    font-size: 2em;
+}
+
+text-l {
+    font-size: 2.5em;
+}
+
+block-l {
+    width: 80%;
+    margin-left: 7%;
+}
+
+block-la {
+    width: 40%;
+    float: left;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+block-lb {
+    width: 25%;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+/* Colors */
+.mudiny {
+    background: #7466F9;
+}
+.craily {
+    background: #BD5B49;
+}
+.rosely {
+    background: #F7B6A0;
+}
+.oxely {
+    background: #74A08F;
+}
+.finy {
+    background: #662C5C;
+}
+
+.uniuse {
+    background: gray;
+    opacity: 0.8;
+}
+
+.uniuse-o {
+    opacity: 0.6;
+}
+
+/* CSS Mobile */
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+    block-o,
+    top-bar-o,
+    sidebar-o,
+    bottom-bar-o,
+    block-l,
+    block-la,
+    block-lb,
+    block-lc {
+        border-radius: 10px;
+        padding: 1%;
+        margin-bottom: 5%;
+    }
+
+    text-lb {
+        font-size: 1.5em;
+    }
+
+    text-la {
+        font-size: 2em;
+    }
+
+    text-l {
+        font-size: 2.5em;
+    }
+
+    block-l {
+        width: 80%;
+    }
+
+    block-la {
+        width: 40%;
+        float: left;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+}
+
+/*  FONT IMPORT   */
+@font-face {
+    font-family: "SFCompactRounded-Regular";
+    src: url("../../fonts/SFCompactRounded-Regular.woff") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+
+/* MENU */
+#menu__toggle {
+    opacity: 0;
+  }
+  
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  
+    width: 26px;
+    height: 26px;
+  
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+  
+    width: 100%;
+    height: 2px;
+  
+    background-color: #616161;
+  
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+  
+    width: 300px;
+    height: 100%;
+  
+    margin: 0;
+    padding: 80px 0;
+  
+    list-style: none;
+  
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  
+    transition-duration: .25s;
+  }
+  
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+  
+    color: #333;
+  
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+  
+    text-decoration: none;
+  
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
